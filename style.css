@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: whitesmoke;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+
+#text-container {
+    width: 800px;
+    height: auto;
+    margin: 20px  auto;
+    line-height: 2rem;
+    white-space: nowrap;
+    padding: 10px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: none;
+    border-radius: 5px;
+}
+
+#timer {
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+button {
+    padding: 10px;
+    width: 150px;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    display: none;
+}
+
+span {
+    min-width: 14px;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+.correct {
+    color: green;
+}
+.error {
+    color: red;
+}
